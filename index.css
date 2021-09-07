@@ -247,10 +247,65 @@ body {
   .discs div,
   .tower {
     width: 65px;
+    overflow: visible;
   }
 
   .call-to-action {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .tower::before {
+    width: 5px;
+  }
+
+  .disc1::before {
+    width: 10px;
+    background-color: red;
+  }
+
+  .disc2::before {
+    width: 20px;
+    background-color: orange;
+  }
+
+  .disc3::before {
+    width: 30px;
+    background-color: yellow;
+  }
+
+  .disc4::before {
+    width: 40px;
+    background-color: green;
+  }
+
+  .disc5::before {
+    width: 50px;
+    background-color: blue;
+  }
+
+  .disc6::before {
+    width: 60px;
+    background-color: indigo;
+  }
+
+  .disc7::before {
+    width: 70px;
+    background-color: violet;
+  }
+
+  .disc8::before {
+    width: 80px;
+    background-color: rgb(32, 255, 236);
+  }
+
+  .disc9::before {
+    width: 90px;
+    background-color: rgb(67, 255, 29);
+  }
+
+  .disc10::before {
+    width: 100px;
+    background-color: rgb(207, 87, 255);
   }
 }
