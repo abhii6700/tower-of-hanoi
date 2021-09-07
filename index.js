@@ -17,6 +17,7 @@
 //     towerOfHanoi(n, 'A', 'C', 'B')
 
 const input = document.getElementById('input-value')
+const steps = document.getElementById('steps')
 
 const discsModel = [[], [], []];
 const getDiscsState = () => discsModel.map((tower) => tower.length).join();
@@ -82,6 +83,7 @@ function run(){
         }
     }
     showDisc()
+    steps.innerHTML = ` <p>tower of hanoi with ${num} discs can be solved in ${Math.pow(2, num) - 1} steps</p>`
     solve(discsModel["flat"](2).length);
     renderPuzzle(700);
 }
