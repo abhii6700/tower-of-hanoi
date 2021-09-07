@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Tower of Hanoi</title>
+</head>
+<body>
+    <div class="title">
+        <h1 >Tower of Hanoi</h1>
+    </div>
+    <div class="description">
+        <p>Tower of Hanoi is a mathematical puzzle where we have three rods and n discs. The objective of the puzzle is to move the entire stack to another rod, obeying the following simple rules: </p>
+        <ol>
+            <li>Only one disc can be moved at a time.</li>
+            <li>Each move consists of taking the upper disc from one of the stacks and placing it on top of another stack i.e. a disc can only be moved if it is the uppermost disc on a stack.</li>
+            <li>No disc may be placed on top of a smaller disk.</li>
+        </ol>
+    </div>
+    <div class="puzzle">
+        <div class="tower tower0"></div>
+        <div class="tower tower1"></div>
+        <div class="tower tower2"></div>
+        <div class="base"></div>
+        <span class="discs"></span>
+    </div>
+    <div class="call-to-action">
+        <div class="input">
+            <p>Enter number of discs :</p>
+            <input id="input-value" type="number" min="0" max="10" value="0">
+            <!-- <button onclick = 'getDiscs()'>Get discs</button> -->
+        </div>
+        <div class="solve">
+            <button onclick='run()'>Solve</button>
+        </div>
+
+    </div>
+  
+</body>
+<script src="./index.js"></script>
+</html>
