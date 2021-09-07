@@ -6,7 +6,6 @@
 
 body {
   background-color: rgb(255, 255, 255);
-  margin: 2rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -226,4 +225,32 @@ body {
 
 .call-to-action .input button:hover {
   background-color: black;
+}
+
+/* RESPONSIVE STYLES */
+
+@media only screen and (max-width: 768px) {
+  .description {
+    width: 90%;
+    margin: 1rem auto;
+    text-align: center;
+  }
+  .puzzle {
+    width: 200px;
+    margin: 3rem 2rem;
+    zoom: 0;
+  }
+  .base {
+    width: 300px;
+  }
+
+  .discs div,
+  .tower {
+    width: 65px;
+  }
+
+  .call-to-action {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
